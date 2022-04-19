@@ -4,30 +4,25 @@ let age_3 = 60
 
 let checkAge = function(age) {
    
-    if (typeof age !== 'number') 
-    
-        /* Number(age) */
-    {console.error('Not a number')} 
+    if (typeof age == 'number' && (age < age_2)) 
+        console.log("You dont have access cause your age is " + age + "Its less then " + age_2)
 
-
-        else{ 
-
-        if  (age < age_2) {
-            console.log("You dont have access cause your age is " + age + "Its less then " + age_2) 
-        }   
-        else if (age >= age_2 && age < age_3) {
-            console.log("Welcome !")
-        }
-
-        else if (age > age_3) {
-            console.log("Keep calm and look Culture channel")
-        }    
-        else{
-            console.log("Technical work") 
-        } 
+    else if (age >= age_2 && age < age_3) {
+        console.log("Welcome !")
     }
-} 
-
+    else if (age > age_3) {
+            console.log("Keep calm and look Culture channel")
+    }
+    
+    else if (typeof age !== 'number') {
+        let age = Number(age);
+        return
+    }  
+    else{
+    console.log("Technical work") 
+    } 
+}
+ 
 checkAge (17)
 checkAge (18)
 checkAge (61)
