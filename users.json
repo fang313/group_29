@@ -1,6 +1,7 @@
 {
-	"p1" = "Alex",
-	"p2" = "Victor",
-	"p3" = "Olya"
-
+	"p1":"Alex",
+	"p2":"Victor",
+	"p3":"Olya",
+	"p4":"Vasya",
+	"p5":"Tomas"
 }
